@@ -38,9 +38,9 @@ The following shows the edit made to the [random_walk.R](https://github.com/adam
    <img width="461" alt="Screenshot 2024-12-12 at 01 40 26" src="https://github.com/user-attachments/assets/0c7e7d62-1a62-496e-b90b-e43762239f72" />
    
   - The exponent ($\beta$) is the estimate for the coefficient of the log of genome length = 1.52 (2dp).
-    - The p-value was $2.28 /times 10^{-10}$ which is highly significant
+    - The p-value was $2.28 \times 10^{-10}$ which is highly significant
   - The scaling factor ($\alpha$) is the exponent of the estimate of the intercept = exp(7.0748) = 1181.81 (2dp).
-    - The p-value was $6.44 /times 10^{-10}$ which is highly significant
+    - The p-value was $6.44 \times 10^{-10}$ which is highly significant
 
    As shown by **Table 2** of the paper below, I obtained identical values
   
