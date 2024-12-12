@@ -2,6 +2,16 @@
 
 \# INSERT ANSWERS HERE #
 
+## Question 4
+
+The same code run twice  produces two different 2D random walks each with 500 steps of random direction (any angle between 0 and 360 degrees) and set distance of 0.25, with the shade of blue becoming lighter over time. Both walks start at the same coordinate (0,0), however from there the paths deviate and bear no correlation. This is because both random walks appear irregular and non-deterministic due to the random angle selection. Over time, the paths tend to randomly move away from the origin point, with a random spatial distribution. The paths also self-intersect many times.
+
+![Random Walk Plot](https://github.com/adamg421/reproducible-research_homework/blob/main/question-4-code/plots/Rplot.png)
+
+Computers are incapable of producing random numbers, thus a random seed is provided as a starting point for a pseudorandom number generator (PRNG). The PRNG algorithm will produce a series of numbers that appear random, but are deterministic and will always be the same for a given random seed. This is useful for experimental simulations that require reproducibility. A random seed is often generated from the state of the computer, such as the system clock.
+
+
+
 ## Instructions
 
 The homework for this Computer skills practical is divided into 5 questions for a total of 100 points. First, fork this repo and make sure your fork is made **Public** for marking. Answers should be added to the # INSERT ANSWERS HERE # section above in the **README.md** file of your forked repository.
