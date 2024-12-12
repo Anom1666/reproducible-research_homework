@@ -9,11 +9,11 @@
 
 The same code run twice  produces two different 2D random walks each with 500 steps of random direction (any angle between 0 and 360 degrees) and set distance of 0.25, with the shade of blue becoming lighter over time. Both walks start at the same coordinate (0,0), however from there the paths deviate and bear no correlation. This is because both random walks appear irregular and non-deterministic due to the random angle selection. Over time, the paths tend to randomly move away from the origin point, with a random spatial distribution. The paths also self-intersect many times.
 
-![Random Walk Plot](https://github.com/adamg421/reproducible-research_homework/blob/main/question-4-code/plots/Rplot.png)
+![Random Walk Plot](https://github.com/anom1666/reproducible-research_homework/blob/main/question-4-code/plots/Rplot.png)
 
 Computers are incapable of producing random numbers, thus a random seed is provided as a starting point for a pseudorandom number generator (PRNG). The PRNG algorithm will produce a series of numbers that appear random, but are deterministic and will always be the same for a given random seed. This is useful for experimental simulations that require reproducibility. A random seed is often generated from the state of the computer, such as the system clock.
 
-The following shows the edit made to the [random_walk.R](https://github.com/adamg421/reproducible-research_homework/blob/main/question-4-code/random_walk.R) code in order to make it reproducible. This is done by ensuring the seed is set to the same number (1 in this case) each time the function runs.
+The following shows the edit made to the [random_walk.R](https://github.com/anom1666/reproducible-research_homework/blob/main/question-4-code/random_walk.R) code in order to make it reproducible. This is done by ensuring the seed is set to the same number (1 in this case) each time the function runs.
 ![Screenshot 2024-12-12 at 00 53 29](https://github.com/user-attachments/assets/cb2843ec-7adc-4fa0-abae-0443fce57381)
 
 Below, you can see that the output is the same each time.
@@ -50,7 +50,7 @@ Below, you can see that the output is the same each time.
   
   ![Screenshot 2024-12-12 at 01 47 18](https://github.com/user-attachments/assets/5f27213a-cc3a-447f-990e-630f7f6e7b8b)
 
-- The following code produces the figure below of log genome length (kb) against log virion volume ($nm^3$). The code can also be found in the repository ([virion_size_relationship_code.R](https://github.com/adamg421/reproducible-research_homework/blob/main/question-5-data/virion_size_relationship_code.R)) 
+- The following code produces the figure below of log genome length (kb) against log virion volume ($nm^3$). The code can also be found in the repository ([virion_size_relationship_code.R](https://github.com/anom1666/reproducible-research_homework/blob/main/question-5-data/virion_size_relationship_code.R)) 
   ```
   #Load the necessary packages
    library(here)
