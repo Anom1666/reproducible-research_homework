@@ -2,6 +2,9 @@
 
 \# INSERT ANSWERS HERE #
 
+## Questions 1-3
+[Please follow this link](https://github.com/adamg421/MT_Wk3_logistic_growth)
+
 ## Question 4
 
 The same code run twice  produces two different 2D random walks each with 500 steps of random direction (any angle between 0 and 360 degrees) and set distance of 0.25, with the shade of blue becoming lighter over time. Both walks start at the same coordinate (0,0), however from there the paths deviate and bear no correlation. This is because both random walks appear irregular and non-deterministic due to the random angle selection. Over time, the paths tend to randomly move away from the origin point, with a random spatial distribution. The paths also self-intersect many times.
