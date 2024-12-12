@@ -14,6 +14,68 @@ The following shows the edit made to the [random_walk.R](https://github.com/adam
 ![Screenshot 2024-12-12 at 00 53 29](https://github.com/user-attachments/assets/cb2843ec-7adc-4fa0-abae-0443fce57381)
 
 
+## Question 5
+
+- The table has 13 columns and 33 rows.
+- To fit a linear model for the allometric equation $V = \alpha L^\beta$ we can apply a log transfomration on both V (Virion volume) and L (Genome length). This produces the equation $log(V) = \beta log(L) + log(\alpha)$ that resembles a linear equation y = mx + c.
+
+  In r, this transformation can be applied using the dplyr package in the following way:
+  ```
+  library(dplyr)
+  data <- data %>%
+  mutate(log_volume = log(Virion.volume..nm.nm.nm.),
+         log_genome_length = log(Genome.length..kb.))
+  ```
+- The summary of a linear model applied to the log transformed data:
+  ```
+  linear_model = lm(log_volume ~ log_genome_length, data = data)
+   summary(linear_model)
+  ```
+
+   <img width="461" alt="Screenshot 2024-12-12 at 01 40 26" src="https://github.com/user-attachments/assets/0c7e7d62-1a62-496e-b90b-e43762239f72" />
+   
+  - The exponent ($\beta$) is the estimate for the coefficient of the log of genome length = 1.52 (2dp).
+    - The p-value was $2.28 /times 10^{-10}$ which is highly significant
+  - The scaling factor ($\alpha$) is the exponent of the estimate of the intercept = exp(7.0748) = 1181.81 (2dp).
+    - The p-value was $6.44 /times 10^{-10}$ which is highly significant
+
+   As shown by **Table 2** of the paper below, I obtained identical values
+  
+  ![Screenshot 2024-12-12 at 01 47 18](https://github.com/user-attachments/assets/5f27213a-cc3a-447f-990e-630f7f6e7b8b)
+
+- The following code produces the figure below of log genome length (kb) against log virion volume ($nm^3$). The code can also be found in the repository (virion_size_relationship_code.R) 
+  ```
+  #Load the necessary packages
+   library(here)
+   library(dplyr)
+   library(ggplot2)
+   
+   #Load the data
+   data = read.csv(here("question-5-data", "Cui_etal2014.csv"))
+   
+   #Perform the log-transformation on both virion volume and genome length
+   data <- data %>%
+     mutate(log_volume = log(Virion.volume..nm.nm.nm.),
+            log_genome_length = log(Genome.length..kb.))
+   
+   #Load the necessary packages
+   library(here)
+   library(dplyr)
+   library(ggplot2)
+   
+   #Load the data
+   data = read.csv(here("question-5-data", "Cui_etal2014.csv"))
+   
+   #Perform the log-transformation on both virion volume and genome length
+   data <- data %>%
+     mutate(log_volume = log(Virion.volume..nm.nm.nm.),
+            log_genome_length = log(Genome.length..kb.))
+  ```
+  The output figure:
+  ![00078169-d5be-440a-99ce-5dde2fbfddf6](https://github.com/user-attachments/assets/0de3f19b-83a4-46c4-b677-c8e2cb7f1a89)
+
+  
+
 ## Instructions
 
 The homework for this Computer skills practical is divided into 5 questions for a total of 100 points. First, fork this repo and make sure your fork is made **Public** for marking. Answers should be added to the # INSERT ANSWERS HERE # section above in the **README.md** file of your forked repository.
