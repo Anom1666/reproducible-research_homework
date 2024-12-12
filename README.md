@@ -78,7 +78,7 @@ The following shows the edit made to the [random_walk.R](https://github.com/adam
   ![00078169-d5be-440a-99ce-5dde2fbfddf6](https://github.com/user-attachments/assets/0de3f19b-83a4-46c4-b677-c8e2cb7f1a89)
 
   - To find the estimated volume of a 300kb virus we can input our estimates into the equation:
-    - $V = \alpha L^\beta \therefore V = 1181.807 \times 300^{1.5152} =$ 
+    - $V = \alpha L^\beta \therefore V = 1181.807 \times 300^{1.5152}$ 
     - $\therefore V = 6697006 nm^3$
 
 ## Instructions
