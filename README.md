@@ -13,10 +13,10 @@ The same code run twice  produces two different 2D random walks each with 500 st
 
 Computers are incapable of producing random numbers, thus a random seed is provided as a starting point for a pseudorandom number generator (PRNG). The PRNG algorithm will produce a series of numbers that appear random, but are deterministic and will always be the same for a given random seed. This is useful for experimental simulations that require reproducibility. A random seed is often generated from the state of the computer, such as the system clock.
 
-The following shows the edit made to the [random_walk.R](https://github.com/adamg421/reproducible-research_homework/blob/main/question-4-code/random_walk.R) code in order ot make it reproducible. This is done by ensuring the seed is set to the same number (in this case 1) each time the function runs.
+The following shows the edit made to the [random_walk.R](https://github.com/adamg421/reproducible-research_homework/blob/main/question-4-code/random_walk.R) code in order to make it reproducible. This is done by ensuring the seed is set to the same number (1 in this case) each time the function runs.
 ![Screenshot 2024-12-12 at 00 53 29](https://github.com/user-attachments/assets/cb2843ec-7adc-4fa0-abae-0443fce57381)
 
-Below you can see that the output each time is the same
+Below, you can see that the output is the same each time.
 
 ![6b6f42f7-7e08-4dc9-8a07-33dcc1c964ac](https://github.com/user-attachments/assets/997a529d-33d5-4699-b339-ad85562788c6)
 
@@ -24,7 +24,7 @@ Below you can see that the output each time is the same
 ## Question 5
 
 - The table has 13 columns and 33 rows.
-- To fit a linear model for the allometric equation $V = \alpha L^\beta$ we can apply a log transfomration on both V (Virion volume) and L (Genome length). This produces the equation $log(V) = \beta log(L) + log(\alpha)$ that resembles a linear equation y = mx + c.
+- To fit a linear model for the allometric equation $V = \alpha L^\beta$ we can apply a log transformation on both V (Virion volume) and L (Genome length). This produces the equation $log(V) = \beta log(L) + log(\alpha)$ that resembles a linear equation y = mx + c.
 
   In r, this transformation can be applied using the dplyr package in the following way:
   ```
