@@ -10,6 +10,8 @@ The same code run twice  produces two different 2D random walks each with 500 st
 
 Computers are incapable of producing random numbers, thus a random seed is provided as a starting point for a pseudorandom number generator (PRNG). The PRNG algorithm will produce a series of numbers that appear random, but are deterministic and will always be the same for a given random seed. This is useful for experimental simulations that require reproducibility. A random seed is often generated from the state of the computer, such as the system clock.
 
+The following shows the edit made to the [random_walk.R](https://github.com/adamg421/reproducible-research_homework/blob/main/question-4-code/random_walk.R) code in order ot make it reproducible. This is done by ensuring the seed is set to the same number (in this case 1) each time the function runs.
+![Screenshot 2024-12-12 at 00 53 29](https://github.com/user-attachments/assets/cb2843ec-7adc-4fa0-abae-0443fce57381)
 
 
 ## Instructions
