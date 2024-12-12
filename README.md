@@ -43,7 +43,7 @@ The following shows the edit made to the [random_walk.R](https://github.com/adam
   
   ![Screenshot 2024-12-12 at 01 47 18](https://github.com/user-attachments/assets/5f27213a-cc3a-447f-990e-630f7f6e7b8b)
 
-- The following code produces the figure below of log genome length (kb) against log virion volume ($nm^3$). The code can also be found in the repository (virion_size_relationship_code.R) 
+- The following code produces the figure below of log genome length (kb) against log virion volume ($nm^3$). The code can also be found in the repository ([virion_size_relationship_code.R](https://github.com/adamg421/reproducible-research_homework/blob/main/question-5-data/virion_size_relationship_code.R)) 
   ```
   #Load the necessary packages
    library(here)
