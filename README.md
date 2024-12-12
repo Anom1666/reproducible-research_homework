@@ -3,7 +3,7 @@
 \# INSERT ANSWERS HERE #
 
 ## Questions 1-3
-[Please follow this link](https://github.com/adamg421/MT_Wk3_logistic_growth)
+[Please follow this link](https://github.com/Anom1666/MT_Wk3_logistic_growth)
 
 ## Question 4
 
